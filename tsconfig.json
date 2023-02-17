@@ -13,12 +13,14 @@
     "allowJs": true,
     // 
     "moduleResolution": "node",
-    "baseUrl": ".",
     // позволяет работать с пакетами, которые используют common js как с обычными пакетами с помощью import (require() module.export) = common js
     "esModuleInterop": true,
     // если в библиотке не имеет дефолтный импорт, лоадеры их автоматически создают 
     "allowSyntheticDefaultImports": true,
-    
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./src/*"]
+    }
   },
      "ts-node": {
         "compilerOptions": {
